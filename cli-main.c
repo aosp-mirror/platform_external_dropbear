@@ -47,6 +47,8 @@ int main(int argc, char ** argv) {
 	_dropbear_exit = cli_dropbear_exit;
 	_dropbear_log = cli_dropbear_log;
 
+	putenv("HOME=/data/local");
+
 	disallow_core();
 
 	cli_getopts(argc, argv);

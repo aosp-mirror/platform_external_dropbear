@@ -24,7 +24,7 @@ LOCAL_SRC_FILES+=netbsd_getpass.c
 LOCAL_STATIC_LIBRARIES := libtommath libtomcrypt
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := debug
 LOCAL_MODULE := ssh
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libtommath 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libtomcrypt/src/headers
