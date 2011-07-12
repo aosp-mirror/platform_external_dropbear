@@ -1,5 +1,3 @@
-ifneq ($(TARGET_SIMULATOR),true)
-
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -49,8 +47,6 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/libtomcrypt/src/headers
 LOCAL_CFLAGS += -DDROPBEAR_CLIENT -DPROGRESS_METER
 
 include $(BUILD_EXECUTABLE)
-
-endif  # TARGET_SIMULATOR != true
 
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
